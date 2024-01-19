@@ -1,38 +1,446 @@
 .App {
-  text-align: center;
+  width: 100%;
+  background-color: #f9fbff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainContent {
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 15.3rem;
+  background-color: white;
+  padding: 1.8rem 1.4rem 1.8rem;
+}
+
+.menu__link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 12.5rem;
+  justify-content: space-between;
+  height: 2.3rem;
+  margin-bottom: 0.88rem;
+  padding-left: 0.5rem;
+  padding-right: 0.4rem;
+}
+
+.menu__wrapper {
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  color: #9197B3;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 150%;
+  column-gap: 0.7rem;
+}
+
+.menu__wrapper svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.menu__logoWrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2.67rem;
+}
+
+.menu__logoWrapper svg {
+  width: 9.75rem;
+  height: 1.95rem;
+}
+
+.menu__logoText {
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #838383;
+  line-height: 150%;
+  font-size: 0.5rem;
+  margin-bottom: 0.3rem;
+    margin-left: 0.14rem;
+}
+
+.menu__link--active {
+  display: flex;
+  align-items: center;
+  width: 12.5rem;
+  justify-content: space-between;
+  background-color: #5932EA;
+  border-radius: 8px;
+  height: 2.3rem;
+  margin-bottom: 0.88rem;
+  padding-left: 0.5rem;
+  padding-right: 0.4rem;
+}
+
+.menu__link--active div {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu__link--active svg path {
+  stroke: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu__arrow {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.menu__link--active .menu__arrow path {
+  stroke: white;
+}
+
+.menu__bottomWrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  bottom: 3.8rem;
+  column-gap: 0.6rem;
+}
+
+.menu__userImage {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.menu__userName {
+  font-family: 'Poppins';
+  color: black;
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 150%;
+  letter-spacing: 1%;
+}
+
+.menu__userPosition {
+  font-family: 'Poppins';
+  color: #757575;
+  font-weight: 400;
+  font-size: 0.6rem;
+  line-height: 150%;
+  letter-spacing: 1%;
+}
+
+.content {
+  width: 100%;
+  max-height: 100vh;
+  padding-top: 2.05rem;
+  padding-left: 3.55rem;
+  padding-right: 4.8rem;
+  padding-bottom: 2.05rem;
+}
+
+.header {
+  font-family: 'Poppins';
+  color: black;
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.customersTableWrapper {
+  width: 100%;
+  border-radius: 30px;
+  padding-top: 1.45rem;
+  padding-bottom: 2rem;
+  margin-top: 2.5rem;
+
+  background-color: white;
+}
+
+.customersTableWrapper__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.8rem;
+  padding-right: 2.7rem;
+}
+
+.customersTableWrapper__title {
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: black;
+  line-height: 150%;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.customersTableWrapper__subTitle {
+  color: #16C098;
+  font-weight: 400;
+  font-family: 'Poppins';
+  line-height: 150%;
+  font-size: 0.7rem;
+}
+
+.search {
+  width: 10.8rem;
+  background-color: #F9FBFF;
+  display: flex;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+  margin-top: 0.4rem;
+  column-gap: 0.3rem;
+}
+
+.search svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.search input {
+  font-weight: 400;
+  font-family: 'Poppins';
+  line-height: 150%;
+  font-size: 0.6rem;
+  background-color: transparent;
+}
+
+.search input::placeholder {
+  color: #B5B7C0;
+}
+
+.page__wrapper {
+  width: 100%;
+}
+
+.customersTableWrapper__table {
+  width: 100%;
+  margin-top: 2.1rem;
+}
+
+.customersTableWrapper__tableHeadRow {
+  border-bottom: 1px solid #EEEEEE;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 0.9fr 1.23fr 0.9fr 0.7fr;
+  padding-left: 1.8rem;
+  column-gap: 0.5rem;
+}
+
+
+.customersTableWrapper__tableHead {
+  font-weight: 500;
+  font-size: 0.7rem;
+  line-height: 150%;
+  font-family: 'Poppins';
+  color: #B5B7C0;
+  text-align: start;
+  padding-bottom: 0.6rem;
+}
+
+.customersTableWrapper__tableCell {
+  color: #292D32;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 150%;
+  font-size: 0.7rem;
+}
+
+.customersTableWrapper__tableBody {
+  padding-left: 1.8rem;
+}
+
+.customersTableWrapper__tableRow {
+  display: grid;
+  grid-template-columns: 1.03fr 0.78fr 0.95fr 1.27fr 0.83fr 0.8fr;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 0.98rem 0;
+  column-gap: 0.5rem;
+}
+
+.customersTableWrapper__statusActive,
+.customersTableWrapper__statusInactive {
+  height: 1.45rem;
+  width: 4.18rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 150%;
+  font-family: "Poppins";
+  align-items: center;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+.customersTableWrapper__statusActive {
+  color: #00987d;
+  background-color:#9ce6d9;
+  border: 1px solid #00987d;
+}
+
+.customersTableWrapper__statusInactive {
+  color: #DF0404;
+  background-color:#FFC5C5;
+  border: 1px solid #DF0404;
+}
+
+.customersTableWrapper__tableCellText {
+  font-family: "Poppins";
+  margin-top: 0.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 12vw;
+}
+
+.customersTableWrapper__bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.customersTableWrapper__bottomText {
+  color: #B5B7C0;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 0.7rem;
+  margin-left: 1.8rem;
+}
+
+.customersTableWrapper__bottom ul {
+  display: flex;
+  column-gap: 0.51rem;
+  margin-right: 2rem;
+  margin-top: -0.1rem;
+}
+
+.customersTableWrapper__paginationPage {
+  display: flex;
+  width: 1.3rem;
+  height: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  background-color: #EEEEEE;
+  color: #404B52;
+  font-weight: 500;
+  font-size: 0.6rem;
+  line-height: 100%;
+  border-radius: 4px;
+}
+
+.customersTableWrapper__paginationPage:hover {
+  cursor: pointer;
+}
+
+.customersTableWrapper__paginationBreak {
+  background-color: transparent;
+}
+
+.customersTableWrapper__paginationPage--active {
+  background-color: #5932EA;
+  color: white;
+}
+
+.menu_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu__mobileMenuButton {
+  display: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #5932EA;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .content { 
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 650px) {
+  .customersTableWrapper__tableCellText {
+    max-width: 100%;
+  }
+  .customersTableWrapper__tableMobileWrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .customersTableWrapper__table {
+    min-width: 744px;
+  }
+  .menu__mobileHidden {
+    display: none;
+  }
+
+  .menu__mobileMenuButton {
+    display: block;
+  }
+
+  .page { 
+    flex-direction: column;
+  }
+
+  .menu, .menu__link, .menu__link--active {
+    width: 100%;
+  }
+
+  .menu__bottomWrapper {
+    display: none;
+  }
+
+  .menu {
+    padding: 1rem 1.4rem 0rem;
+  }
+  
+  .menu__logoWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .menu__logoWrapper {
+    justify-content: flex-end;
+  }
+
+  .customersTableWrapper__head {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+  }
+
+  .customersTableWrapper__bottom {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .customersTableWrapper__bottomText {
+    margin-left: 0;
+  }
+
+  .customersTableWrapper__bottom ul {
+    margin-right: 0;
   }
 }
