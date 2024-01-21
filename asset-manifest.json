@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/gorbachova-fop/static/css/main.67f97e35.css",
+    "main.css": "/gorbachova-fop/static/css/main.3bf1dcc8.css",
     "main.js": "/gorbachova-fop/static/js/main.35769dca.js",
     "static/js/787.5e6ef21f.chunk.js": "/gorbachova-fop/static/js/787.5e6ef21f.chunk.js",
-    "static/media/logo.svg": "/gorbachova-fop/static/media/logo.b585074494aaa6ffb0cb88ac53f58f18.svg",
-    "static/media/promote.svg": "/gorbachova-fop/static/media/promote.5230029f4e637c534c143c4d95cf421f.svg",
-    "static/media/income.svg": "/gorbachova-fop/static/media/income.25d824b57e5c5a753432296807e7285d.svg",
-    "static/media/product.svg": "/gorbachova-fop/static/media/product.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
-    "static/media/help.svg": "/gorbachova-fop/static/media/help.5d23912a887f9edc9d9f8d957ec960e6.svg",
-    "static/media/customers.svg": "/gorbachova-fop/static/media/customers.91bcd572f0c6d748abcc7c9d221e89f5.svg",
+    "static/media/logo.svg": "/gorbachova-fop/static/media/logo.836c038d49cd7b7fd2b4fdd041293323.svg",
+    "static/media/promote.svg": "/gorbachova-fop/static/media/promote.6173903c20a60f923179e722dc0ff91e.svg",
+    "static/media/income.svg": "/gorbachova-fop/static/media/income.18c43397e34f1fe16af5b4ed2e9e2cc1.svg",
+    "static/media/product.svg": "/gorbachova-fop/static/media/product.28af61e375474813a6adc4fb27e44391.svg",
+    "static/media/help.svg": "/gorbachova-fop/static/media/help.d9aa53d3772328403382b97577e39a82.svg",
+    "static/media/customers.svg": "/gorbachova-fop/static/media/customers.e3c77df8ddb5ceebc5d08cb47966b352.svg",
     "index.html": "/gorbachova-fop/index.html",
-    "static/media/dashboard.svg": "/gorbachova-fop/static/media/dashboard.153a0eb179be0548729792a4f21fc52e.svg",
-    "static/media/search.svg": "/gorbachova-fop/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
-    "static/media/arrowRight.svg": "/gorbachova-fop/static/media/arrowRight.618c411d724ff239093f3539c12387f1.svg",
-    "main.67f97e35.css.map": "/gorbachova-fop/static/css/main.67f97e35.css.map",
+    "static/media/dashboard.svg": "/gorbachova-fop/static/media/dashboard.6cea77b5f7edab5e350a0a4c207516da.svg",
+    "static/media/search.svg": "/gorbachova-fop/static/media/search.7e755b5fd9cc9ee5ea709c09b0a3de00.svg",
+    "static/media/arrowRight.svg": "/gorbachova-fop/static/media/arrowRight.28d63028e3a146387ed2b1067705c889.svg",
+    "main.3bf1dcc8.css.map": "/gorbachova-fop/static/css/main.3bf1dcc8.css.map",
     "main.35769dca.js.map": "/gorbachova-fop/static/js/main.35769dca.js.map",
     "787.5e6ef21f.chunk.js.map": "/gorbachova-fop/static/js/787.5e6ef21f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67f97e35.css",
+    "static/css/main.3bf1dcc8.css",
     "static/js/main.35769dca.js"
   ]
 }
